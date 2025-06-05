@@ -61,12 +61,12 @@ This work-in-progress explores a range of methods and analytical strategies that
 - **Trajectory-Informed Hypothesis Generation**  
   Links behavior patterns to evolving research questions, demonstrating a possible model for exploratory-to-confirmatory transitions.
 
-### Reusable Tools & Frameworks
-- **Analysis Pipeline**  
-  An end-to-end process for handling raw event logs, feature extraction, modeling, and visualization.
-- **Replicable Code & Sample Data**  
-  Available in [Framework & Methodology](5-framework-methodology.md) and [Collaboration](7-collaboration.md) for adaptation and reuse.
-- **Visual Insight Tools**  
-  Includes Sankey diagrams, trajectory plots, and correlation heatmaps to support interpretive inquiry.
+### Methodological Contributions
+- **Complete Analysis Pipeline**  
+  Demonstrated end-to-end process from raw logs to actionable insights
+- **Replicable Methodology**  
+  Framework adaptable to other collaborative learning contexts  
+- **Visualization Suite**  
+  Multiple chart types for spatial, temporal, and integrated analysis
 
 
