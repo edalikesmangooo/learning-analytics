@@ -41,7 +41,7 @@ Understanding and supporting collaborative learning through multi-method analyti
 
 ---
 ## Research Scope
-- **Data**: 1.5M+ game logs on learning analytics, prelim focused 90 sessions, multi-method validation pipeline
+- **Data**: 1.5M+ game logs on learning analytics (1500+ sessions, 3000+ players), prelim focused 90 sessions, multi-method validation pipeline
 - **Methods**: Learner change points detection, spatial pathways, statistical progression analysis
 - **Implications**: Evidence-based design principles for informal learning environments
 - **Framework**: Systematic approach from behavioral understanding to learning support design
