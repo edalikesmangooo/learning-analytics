@@ -1,2 +1,9 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
+
+
+title: Spatial Learning Pathways
+description: Exploring how learners navigate multiplayer game spaces in museums
+show_downloads: false
+google_analytics: UA-XXXXXXXXX-X
+
 
