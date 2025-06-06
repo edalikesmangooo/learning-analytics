@@ -1,139 +1,98 @@
-# Phase 1: Exploratory Analysis  
-## From Initial Signals to Deep Structure: A Multi-Stage Exploratory Framework
+# 1. Exploratory Analysis: 
 
-Understanding how learners engage with collaborative, multiplayer game environments requires more than hypothesis testing—it demands open-ended discovery. This phase employed a four-stage exploratory process, beginning with behavioral signal validation and progressing toward spatial-temporal integration. Each stage built toward a richer understanding of player strategies, transitions, and learning patterns.
+## From Proof-of-Concept to Sophisticated Behavioral Understanding
+
+### Research Context & Motivation
+Rainbow Agents is a two-player collaborative game designed to support learning of core computer science concepts such as loops, conditionals, and randomness. As an interactive exhibit, it was deployed at two U.S. science museums to explore informal, socially embedded learning through gameplay.
+
+While museums are studied as unique learning environments, little research has examined how collaborative digital games, particularly those focused on computer science, operate in such settings. This study addresses that gap through large-scale behavioral analysis.
+
+Our investigation was motivated by two fundamental questions:
+
+**Individual & Collaborative Learning Dynamics**: When and how do critical behavioral shifts occur during both individual learning and collaborative interaction within gameplay?
+
+**Computational Detection Methods**: What analytical approaches can reliably detect and characterize distinct behavioral patterns that emerge during these sessions?
+
+The deployment yielded over 1.5 million interaction logs from 1,300+ sessions involving more than 3,000 players.
+
+_Note: Exploratory analyses used strategic subsampling to manage computational load; specific sample sizes are detailed in each phase._
+
+### Our Progressive Methodology
+This phase employed a systematic four-stage approach, moving from initial behavioral validation to sophisticated pattern discovery.
 
 ---
 
-## Research Context & Motivation
-
-This study examines collaborative gameplay in an informal learning environment (a museum-based computer science game exhibit). While collaborative interactions are central, individual behavior still plays a critical role in shaping how learners engage with content, make decisions, and influence group progress. Capturing and understanding these patterns at scale offers both theoretical and design value.
-
----
-
-## Progressive Methodology
-
-This phase used a progressive four-stage process:
-
-1. **Detecting Behavioral Transitions** (change points)
-2. **Validating Predictive Power** (behavioral feature modeling)
-3. **Mapping Latent Behaviors** (spatial analysis)
-4. **Integrating Temporal Patterns** (with spatial landscapes)
-
----
-
-## Stage 1: Detecting Behavioral Transitions — Initial Change Points
-
+## Stage 1: Proof-of-Concept: Behavioral Change Points Detection
 ### Research Question
-Do meaningful behavioral shifts occur within collaborative learning sessions—and can we detect them?
+At what points and in what ways do behavioral changes emerge during gameplay, and what insights do these shifts provide into players’ learning processes and strategies?
 
-### Approach & Data
-- **Approach**: Aggregated event-key analysis using z-scores within fixed-length time windows  
-- **Data**: 90 sessions of multiplayer gameplay (~1.5M interaction logs)  
-- **Analysis**: Identified temporal windows with significant deviation from baseline behavior
 
-### Key Findings
-- **Mid-session variability**: Players often shift strategies after initial exploration
-- **Recurrent inflection points**: Change points frequently aligned with moments of task re-engagement
-- **Evidence**: 73% of sessions showed ≥1 statistically significant shift in engagement metrics
+### Key Findings: [Main statistical result and interpretation]
 
-### Research Implications
-The existence of temporal behavioral transitions provided a rationale for deeper modeling and spatial mapping of play styles.
+[*Visualization placeholder*]
+
+**→ [Complete methodology and statistical results](phases/phase1-change-points.md)**
 
 ---
 
-## Stage 2: Validating Predictive Power — Behavioral Feature Modeling
+### Phase 2: Validating Predictive Indicators
+**Research Question**: [Question about behavioral features and learning success]
 
-### Research Question
-Are the extracted behavioral features reliable indicators of success or engagement?
+**Key Finding**: [AUC result and feature importance findings]
 
-### Approach & Analysis
-- **Modeling Technique**: Logistic regression and multinomial classifiers  
-- **Features**: Time-binned action ratios, session duration, and goal-oriented behavior metrics  
-- **Validation**: 5-fold cross-validation with stratified sampling
+[*Visualization placeholder*]
 
-### Key Findings
-- **Predictive Accuracy**: AUC 0.94 for predicting goal completion  
-- **Important Features**: Navigation intensity, early planting behavior, and creature usage patterns  
-- **Secondary Insight**: High variability in early-session indicators among lower-performing players
-
-### Research Implications
-These results validated the reliability of the derived features, justifying their use in downstream spatial mapping.
+**→ [Full modeling approach and cross-validation results](phases/phase2-predictive-modeling.md)**
 
 ---
 
-## Stage 3: Mapping Latent Behaviors — Spatial Playtracing
+### Phase 3: Mapping the Behavioral Landscape
+**Research Question**: [Question about latent behavioral structure]
 
-### Research Question
-Can spatial representation of behavior uncover distinct learner strategies or modes of interaction?
+**Key Finding**: [t-SNE spatial analysis results and cluster findings]
 
-### Approach & Analysis
-- **Dimensionality Reduction**: t-SNE on standardized behavior feature vectors  
-- **Spatial Encoding**: Grid-based discretization to visualize behavior "territories"  
-- **Innovation**: Use of a unified coordinate space across sessions to compare player paths
+[*Visualization placeholder*]
 
-### Key Findings
-- **Behavioral Clusters**: Six stable clusters identified with distinct gameplay strategies  
-- **Outcome Patterns**: High-performing sessions clustered around a narrow behavioral corridor  
-- **Exploration Variability**: Some players explored broadly with limited task engagement
-
-### Research Implications
-The spatial landscape provided a novel lens for analyzing emergent strategies and guided targeted investigation into behavioral transitions.
+**→ [Spatial analysis methodology and cluster characterization](phases/phase3-spatial-mapping.md)**
 
 ---
 
-## Stage 4: Integrating Temporal Patterns — Advanced Change Point Overlay
+### Phase 4: The Counter-Intuitive Discovery
+**Research Question**: [Question about temporal-spatial relationship]
 
-### Research Question
-How do behavioral shifts align with spatial exploration patterns and learning progress?
+**Breakthrough Finding**: [Focused exploration vs wandering - key statistics]
+- **Successful learners**: [Movement statistics]
+- **Unsuccessful learners**: [Movement statistics]
+- **Statistical significance**: [Test results]
 
-### Approach & Analysis
-- **Overlay Method**: Applied change point detection to players' trajectories in spatial space  
-- **Integration Logic**: Linked time windows to corresponding spatial clusters  
-- **Measured Effects**: Compared location shifts, engagement types, and task proximity across change windows
+**Theoretical Implication**: [How this challenges exploration-based learning assumptions]
 
-### Key Findings
-- **Counter-Intuitive Insight**: Players with “focused” spatial movement had more meaningful change points than broad explorers  
-- **Temporal-Spatial Coupling**: Strategic pivots often coincided with re-entry into task-focused zones  
-- **Group-Level Divergence**: Lower-performing groups showed erratic or late-phase spatial movement
+[*Visualization placeholder*]
 
-### Research Implications
-These results challenged the assumption that broad exploration inherently benefits learning, highlighting the need for focused behavioral support.
+**→ [Complete integration analysis and theoretical framework](phases/phase4-focused-exploration.md)**
 
 ---
 
-## From Exploration to Focused Research Questions
+## Emerging Research Framework
 
-This exploratory trajectory surfaced several core hypotheses about learning through gameplay.
+**Central Research Question**: [Main research question generated from exploration]
 
-### Generated Hypotheses
-
-- **RQ1**: Do mid-session behavioral shifts predict successful task completion?  
-- **RQ2**: Are there distinct player strategy profiles that correlate with learning outcomes?  
-- **RQ3**: How does early navigation behavior influence long-term engagement?  
-- **RQ4**: Can spatial movement patterns distinguish productive versus unproductive collaboration?
-
-### Theoretical Framework
-
-Findings align with progressive engagement models such as *explore → tinker → refine*, constructionist learning, and productive failure. The analysis highlights how shifting between modes of play—structured, exploratory, and goal-directed—supports or hinders learning depending on timing and context.
+[Brief interpretation of theoretical implications]
 
 ---
 
-[← Back to Overview](README.md) | [Next: Hypothesis Generation →](2-hypothesis-generation.md)
+## What This Means for Learning Analytics
 
-
-
-
-
-
-
-
-
-### Coming Soon:
-- EA1: Change Point Analysis - Detecting critical behavioral transitions
-- EA2: Player Modeling - Understanding behavioral archetypes  
-- EA3: Spatial Pathways (t-SNE + Grid) - Mapping behavioral landscapes
-- From Exploration to Hypotheses
+[4-5 bullet points about key implications for the field]
 
 ---
-[← Back to Overview](README.md) | [Next: Hypothesis Generation →](2-hypothesis-generation.md)
+
+[← Back to Research Overview](README.md) | [Next: Hypothesis Generation →](2-hypothesis-generation.md)
+
+---
+
+## Quick Navigation to Detailed Analyses
+- [Phase 1: Change Point Detection](phases/phase1-change-points.md)
+- [Phase 2: Predictive Modeling](phases/phase2-predictive-modeling.md) 
+- [Phase 3: Spatial Behavioral Mapping](phases/phase3-spatial-mapping.md)
+- [Phase 4: Focused Exploration Discovery](phases/phase4-focused-exploration.md)
