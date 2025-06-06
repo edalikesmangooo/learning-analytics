@@ -34,21 +34,40 @@ How can we systematically identify and characterize behavioral transitions in co
 ## 1.3. Progressive Methodology
 The exploratory analysis employed a **validate-then-elaborate** strategy to systematically moving from initial behavioral validation to sophisticated pattern discovery.
 
-### Phase 1: Proof-of-Concept: Behavioral Change Points Detection
-At what points and in what ways do behavioral changes emerge during gameplay, and what insights do these shifts provide into players’ learning processes and strategies?
-- Apply theory-driven z-score detection (threshold = 2.0, based on statistical standards)
-- Test predictive validity before investing in complex feature engineering
-- **Goal**: Establish that basic approach captures meaningful signals
+### Phase 1: Proof of Concept
+**Goal**: Establish that z-score detected change points capture behaviorally meaningful signals
+
+**Methods**:
+- Apply theory-driven z-score detection (explore-refine-tinker transitions)
+- Extract basic behavioral features from detected change points
+- Test predictive validity: Do change point features predict learning success?
+
+**Validation Logic**: Before investing in complex pattern discovery, we first verify that our fundamental approach (z-score change detection) identifies changes that actually matter for learning outcomes.
+
+*Addresses exploratory questions 1 & 2*
 
 ### Phase 2: Pattern Discovery  
-- Extract rich behavioral features from validated change points
-- Apply t-SNE for pattern discovery, followed by grid-based pathway analysis
-- **Goal**: Characterize what the detected changes actually represent
+**Goal**: Characterize what the validated changes represent
+
+**Methods**:
+- Extract rich behavioral features from **validated** change points
+- Apply t-SNE for dimensionality reduction and clustering
+- Grid-based pathway analysis to interpret clusters
+
+**Discovery Logic**: Now that we know change detection works, what are the actual behavioral patterns?
+
+*Addresses exploratory questions 3 & 4*
 
 ### Phase 3: Pattern Validation
-- Re-apply change detection to discovered pathways
-- Conduct statistical testing of complete analytical framework
-- **Goal**: Validate that discovered patterns are statistically robust
+**Goal**: Validate discovered patterns are statistically robust
+
+**Methods**:
+- Re-apply change detection to pathway transitions
+- Statistical testing of complete analytical framework
+
+**Validation Logic**: Do our discovered behavioral patterns represent genuine, replicable phenomena?
+
+*Addresses exploratory question 5*
 
 
 [← Back to Research Overview](README.md) | [Next: Hypothesis Generation →](2-hypothesis-generation.md)
