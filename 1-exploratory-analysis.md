@@ -1,8 +1,6 @@
-# 1. Exploratory Analysis: 
+# 1. Exploratory Analysis: From Proof-of-Concept to Sophisticated Behavioral Understanding
 
-## From Proof-of-Concept to Sophisticated Behavioral Understanding
-
-### Research Context & Motivation
+## 1.1. Research Context & Motivation
 Rainbow Agents is a two-player collaborative game designed to support learning of core computer science concepts such as loops, conditionals, and randomness. As an interactive exhibit, it was deployed at two U.S. science museums to explore informal, socially embedded learning through gameplay.
 
 While museums are studied as unique learning environments, little research has examined how collaborative digital games, particularly those focused on computer science, operate in such settings. This study addresses that gap through large-scale behavioral analysis.
@@ -17,75 +15,41 @@ The deployment yielded over 1.5 million interaction logs from 1,300+ sessions in
 
 _Note: Exploratory analyses used strategic subsampling to manage computational load; specific sample sizes are detailed in each phase._
 
-### Our Progressive Methodology
-This phase employed a systematic four-stage approach, moving from initial behavioral validation to sophisticated pattern discovery.
+---
+## 1.2. Primary Exploratory Question
+How can we systematically identify and characterize behavioral transitions in collaborative CS learning gameplay using computational methods grounded in learning theory?
+
+### Specific Exploratory Questions
+1. **Change Point Detection**: Do z-score-based methods effectively capture explore-refine-tinker learning transitions predicted by CS education theory?
+
+2. **Feature Validation**: Which behavioral indicators extracted from change points show predictive value for learning outcomes?
+
+3. **Pattern Discovery**: What distinct behavioral pathways emerge when player trajectories are analyzed through dimensionality reduction?
+
+4. **Pathway Interpretation**: How do computationally-discovered clusters map to interpretable play states and learning progressions?
+
+5. **Method Validation**: Do pathway-based behavioral patterns show consistent change point signatures when re-analyzed?
 
 ---
+## 1.3. Progressive Methodology
+The exploratory analysis employed a **validate-then-elaborate** strategy to systematically moving from initial behavioral validation to sophisticated pattern discovery.
 
-## Stage 1: Proof-of-Concept: Behavioral Change Points Detection
-### Research Question
+### Phase 1: Proof-of-Concept: Behavioral Change Points Detection
 At what points and in what ways do behavioral changes emerge during gameplay, and what insights do these shifts provide into players’ learning processes and strategies?
+- Apply theory-driven z-score detection (threshold = 2.0, based on statistical standards)
+- Test predictive validity before investing in complex feature engineering
+- **Goal**: Establish that basic approach captures meaningful signals
 
+### Phase 2: Pattern Discovery  
+- Extract rich behavioral features from validated change points
+- Apply t-SNE for pattern discovery, followed by grid-based pathway analysis
+- **Goal**: Characterize what the detected changes actually represent
 
-### Key Findings: [Main statistical result and interpretation]
+### Phase 3: Pattern Validation
+- Re-apply change detection to discovered pathways
+- Conduct statistical testing of complete analytical framework
+- **Goal**: Validate that discovered patterns are statistically robust
 
-[*Visualization placeholder*]
-
-**→ [Complete methodology and statistical results](phases/phase1-change-points.md)**
-
----
-
-### Phase 2: Validating Predictive Indicators
-**Research Question**: [Question about behavioral features and learning success]
-
-**Key Finding**: [AUC result and feature importance findings]
-
-[*Visualization placeholder*]
-
-**→ [Full modeling approach and cross-validation results](phases/phase2-predictive-modeling.md)**
-
----
-
-### Phase 3: Mapping the Behavioral Landscape
-**Research Question**: [Question about latent behavioral structure]
-
-**Key Finding**: [t-SNE spatial analysis results and cluster findings]
-
-[*Visualization placeholder*]
-
-**→ [Spatial analysis methodology and cluster characterization](phases/phase3-spatial-mapping.md)**
-
----
-
-### Phase 4: The Counter-Intuitive Discovery
-**Research Question**: [Question about temporal-spatial relationship]
-
-**Breakthrough Finding**: [Focused exploration vs wandering - key statistics]
-- **Successful learners**: [Movement statistics]
-- **Unsuccessful learners**: [Movement statistics]
-- **Statistical significance**: [Test results]
-
-**Theoretical Implication**: [How this challenges exploration-based learning assumptions]
-
-[*Visualization placeholder*]
-
-**→ [Complete integration analysis and theoretical framework](phases/phase4-focused-exploration.md)**
-
----
-
-## Emerging Research Framework
-
-**Central Research Question**: [Main research question generated from exploration]
-
-[Brief interpretation of theoretical implications]
-
----
-
-## What This Means for Learning Analytics
-
-[4-5 bullet points about key implications for the field]
-
----
 
 [← Back to Research Overview](README.md) | [Next: Hypothesis Generation →](2-hypothesis-generation.md)
 
