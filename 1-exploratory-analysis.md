@@ -17,18 +17,14 @@ _Note: Exploratory analyses used strategic subsampling to manage computational l
 
 ---
 ## 1.2. Primary Exploratory Question
-How can we systematically identify and characterize behavioral transitions in collaborative CS learning gameplay using computational methods grounded in learning theory?
+How can we systematically identify and characterize behavioral transitions in collaborative CS learning gameplay using data-driven computational methods?
 
 ### Specific Exploratory Questions
-1. **Change Point Detection**: Do z-score-based methods effectively capture explore-refine-tinker learning transitions predicted by CS education theory?
-
-2. **Feature Validation**: Which behavioral indicators extracted from change points show predictive value for learning outcomes?
-
-3. **Pattern Discovery**: What distinct behavioral pathways emerge when player trajectories are analyzed through dimensionality reduction?
-
-4. **Pathway Interpretation**: How do computationally-discovered clusters map to interpretable play states and learning progressions?
-
-5. **Method Validation**: Do pathway-based behavioral patterns show consistent change point signatures when re-analyzed?
+1. **Change Point Detection**: Do z-score-based methods effectively capture meaningful behavioral transitions during collaborative CS learning?
+2. **Feature Validation**: Which behavioral indicators extracted from change points show predictive value for learning outcomes, and how can these guide player state modeling?
+3. **Player State Discovery**: What distinct behavioral states emerge when validated change point features are analyzed through dimensionality reduction?
+4. **State Interpretation**: How do computationally-discovered player states map to interpretable learning behaviors and engagement patterns?
+5. **Pattern Validation**: Do discovered behavioral states show consistent signatures when re-analyzed through change point detection?
 
 ---
 ## 1.3. Progressive Methodology
@@ -37,37 +33,34 @@ The exploratory analysis employed a **validate-then-elaborate** strategy to syst
 ### Phase 1: Proof of Concept
 **Goal**: Establish that z-score detected change points capture behaviorally meaningful signals
 
-**Methods**:
-- Apply theory-driven z-score detection (explore-refine-tinker transitions)
-- Extract basic behavioral features from detected change points
-- Test predictive validity: Do change point features predict learning success?
-
-**Validation Logic**: Before investing in complex pattern discovery, we first verify that our fundamental approach (z-score change detection) identifies changes that actually matter for learning outcomes.
-
-*Addresses exploratory questions 1 & 2*
-
-### Phase 2: Pattern Discovery  
-**Goal**: Characterize what the validated changes represent
 
 **Methods**:
-- Extract rich behavioral features from **validated** change points
-- Apply t-SNE for dimensionality reduction and clustering
-- Grid-based pathway analysis to interpret clusters
+- Apply event-level z-score detection (threshold = 2.0) using event rarity statistics
+- Calculate behavioral shift density across temporal phases (0-4)
+- Test predictive validity: Do change point patterns predict learning success?
 
-**Discovery Logic**: Now that we know change detection works, what are the actual behavioral patterns?
+**Validation Logic**: Before investing in complex pattern discovery, we first verify that our fundamental approach (z-score change detection) identifies changes that actually captures learning engagement.
 
-*Addresses exploratory questions 3 & 4*
+*Addresses exploratory questions 1*
 
-### Phase 3: Pattern Validation
-**Goal**: Validate discovered patterns are statistically robust
 
-**Methods**:
-- Re-apply change detection to pathway transitions
-- Statistical testing of complete analytical framework
+### Phase 1.5: Feature Validation 
+**Goal**: Test predictive validity of change point features
+**Methods**: Logistic regression, MultinomialNB on temporal/event predictors
+**Output**: Validated features for player state modeling
 
-**Validation Logic**: Do our discovered behavioral patterns represent genuine, replicable phenomena?
+### Phase 2: Pattern Discovery (t-SNE)
+**Goal**:  Discover distinct behavioral pathways by analyzing player trajectories through dimensionality reduction
 
-*Addresses exploratory question 5*
+### Phase 3: Pathway Interpretation (Grid-based Pathway Analysis)
+**Goal**: Interpret t-SNE clusters as meaningful play states and learning progressions through grid-based pathway analysis
+
+### Phase 4: Method Validation
+**Goal**: Do pathway-based behavioral patterns show consistent change point signatures when re-analyzed?
+
+
+
+
 
 
 [← Back to Research Overview](README.md) | [Next: Hypothesis Generation →](2-hypothesis-generation.md)
