@@ -18,7 +18,7 @@
 
 Applied event-level change point detection using z-score-based analysis (threshold = 2.0) to identify when players exhibited behaviors significantly deviating from established patterns. The approach involved:
 
-**Change Point Detection**: Z-score calculation for each player event, flagging deviations ≥2.0 standard deviations as behavioral anomalies.
+**Change Point Detection**: Z-score calculation for each event , flagging deviations ≥2.0 standard deviations as behavioral anomalies.
 
 **Temporal Analysis**: Sessions segmented into phases (0-4) to calculate change point density—the proportion of anomalous events within each temporal window—mapping when behavioral transitions occur throughout gameplay.
 
@@ -27,13 +27,13 @@ Applied event-level change point detection using z-score-based analysis (thresho
 ## Key Findings
 
 
-Analysis of 20 sessions revealed systematic behavioral transitions with clear patterns:
+Analysis of 80 sessions revealed systematic behavioral transitions with clear patterns:
 
-- **Universal behavioral dynamism**: All 20 sessions contained detectable behavioral shifts, confirming that player behavior is not static during gameplay
-- **Temporal clustering**: Change points cluster in early (Phase 1: 46.7%) and late phases (Phase 3), with reduced activity in mid-session (Phase 2: 15.2%)
+- **Universal behavioral dynamism**: All 80 sessions contained detectable behavioral shifts, confirming that player behavior is not static during gameplay
+- **Temporal clustering**: Change points cluster in early exploration (Phase 1: 24.0%) and late strategy phases (Phase 3: 24.7%), with reduced transition activity during mid-session consolidation (Phase 2: 15.4%)
 - **Success differentiation**: Successful sessions exhibit higher change point density (118.8 vs. 53.6 events per session), suggesting behavioral flexibility may correlate with positive outcomes
 - **Individual variability**: Z-score magnitudes range widely (2.17-9.32), indicating diverse engagement strategies within the collaborative environment
-- **Achievement-linked events**: CreatureUnlocked, FlagCancelled, and CreatureLocked emerge as the most frequently flagged events, potentially marking strategic transitions
+- **Outcome-linked events**: CardSwapped, MushroomOrbFilled, and CreatureDeselected emerge as the most frequently flagged events, potentially marking strategic transitions
 
 ---
 ## Discussion
