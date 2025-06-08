@@ -1,9 +1,17 @@
-theme: jekyll-theme-minimal
-
-
 title: Spatial Learning Pathways
 description: Exploring how learners navigate multiplayer game spaces in museums
 show_downloads: false
 google_analytics: UA-XXXXXXXXX-X
 
+# Add the theme
+remote_theme: just-the-docs/just-the-docs
+
+# Theme settings
+search_enabled: true
+color_scheme: light
+
+# Navigation
+nav_external_links:
+  - title: GitHub Repository
+    url: https://github.com/edalikesmangooo/learning-analytics
 
