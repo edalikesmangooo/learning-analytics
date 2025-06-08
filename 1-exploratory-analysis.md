@@ -1,3 +1,8 @@
+---
+title: "Exploratory Analysis"
+layout: default
+nav_order: 2
+---
 # 1. Exploratory Analysis: From Proof-of-Concept to Sophisticated Behavioral Understanding
 
 ## 1.1. Research Context & Motivation
