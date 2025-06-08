@@ -35,7 +35,7 @@ How can we systematically identify and characterize behavioral transitions in co
 ## 1.3. Progressive Methodology
 The exploratory analysis employed a **validate-then-elaborate** strategy to systematically moving from initial behavioral validation to sophisticated pattern discovery.
 
-### [Phase 1: Proof of Concept](./phases/phase1-change-points.md)
+### [Phase 1: Proof of Concept](EA1-change-points.md)
 **Goal**: Establish that z-score detected change points capture behaviorally meaningful signals
 
 
@@ -49,7 +49,7 @@ The exploratory analysis employed a **validate-then-elaborate** strategy to syst
 *Addresses exploratory questions 1*
 
 
-### [Phase 1.5: Predictive Validation](./phases/phase1.5-predictive-modeling.md) 
+### [Phase 1.5: Predictive Validation](EA1.5-predictive-modeling.md) 
 **Goal**: Test predictive validity of change point features
 **Methods**: Logistic regression, MultinomialNB on temporal & events predictors
 **Output**: Validated features for player state modeling
@@ -68,12 +68,12 @@ The exploratory analysis employed a **validate-then-elaborate** strategy to syst
 
 
 
-[← Back to Research Overview](README.md) | [Next: Hypothesis Generation →](2-hypothesis-generation.md)
+[← Back to Research Overview](README.md) | [Next: Predictive Validation →](EA1.5-predictive-modeling.md)
 
 ---
 
 ## Quick Navigation to Detailed Analyses
-- [Phase 1: Change Point Detection](phases/phase1-change-points.md)
-- [Phase 1.5: Predictive Validation](phases/phase1.5-predictive-modeling.md) 
-- [Phase 2: Spatial Behavioral Mapping](phases/phase3-spatial-mapping.md)
-- [Phase 3: Focused Exploration Discovery](phases/phase4-focused-exploration.md)
+- [EA1: Change Point Detection](EA1-change-points.md)
+- [EA1.5: Predictive Validation](EA1.5-predictive-modeling.md) 
+- [EA2: Spatial Behavioral Mapping](EA2-spatial-mapping.md)
+
