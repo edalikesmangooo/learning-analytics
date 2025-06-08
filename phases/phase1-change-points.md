@@ -36,18 +36,18 @@ Analysis of 80 sessions revealed systematic behavioral transitions with clear pa
 
 - **Universal behavioral dynamism**: All 80 sessions contained detectable behavioral shifts, confirming that player behavior is not static during gameplay
 - **Temporal clustering**: Change points cluster in early exploration (Phase 0: 16.8%) and late strategy phases (Phase 3: 13.5%), with reduced transition activity during mid-session consolidation (Phase 2: 9.8%)
-![Temporal Shape](../assets/imagess/phase1-temporal-trend-1.png)
+![Temporal Shape](assets/images/phase1-temporal-trend-1.png)
 *Figure1: Temporal trend across gameplay phases*
 - **Learning Outcome differentiation**:Sessions achieved all game goals exhibit higher change point density (118.8 vs. 53.6 events per session), suggesting behavioral flexibility may correlate with positive outcomes
-![Group Comparison](../assets/imagess/phase1-group-compare.png)
+![Group Comparison](assets/images/phase1-group-compare.png)
 *Figure 2: Group differences across different outcomes*
 - **Individual variability**: Z-score magnitudes range widely (2.17-9.32), indicating diverse engagement strategies within the collaborative environment
-![Individual Play](../assets/imagess/phase1-individual-1.png)
+![Individual Play](assets/images/phase1-individual-1.png)
 *Figure 3a.: Change point detections of an individual: example 1*
-![Individual Play](../assets/imagess/phase1-individual-2-un.png)
+![Individual Play](assets/images/phase1-individual-2-un.png)
 *Figure 3b.: Change point detections of an individual: example 2*
 - **Outcome-linked events**: CardSwapped, MushroomOrbFilled, and CreatureDeselected emerge as the most frequently flagged events, potentially marking strategic transitions
-![Change Points Events](../assets/imagess/phase1-top-10-events.png)
+![Change Points Events](assets/images/phase1-top-10-events.png)
 *Figure 5: Most seen change points related events*
 ---
 ## Discussion
