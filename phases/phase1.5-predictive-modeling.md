@@ -1,4 +1,4 @@
-# Predictive Modeling
+# Predictive Validation: Can Behavioral Transitions Predict Learning Outcomes?
 
 ## Motivation
 Change point analysis revealed correlational patterns between behavioral transitions and learning success. To understand the multidimensional nature of player behavior and predict learning outcomes, we move beyond event-level anomaly detection toward comprehensive player state modeling. The findings from change point analysis revealed two important dimensions that could inform predictive modeling: temporal patterns (when behavioral shifts occur during gameplay progression) and behavioral patterns (which types of player actions emerge as significant transitions). However, observational correlation does not guarantee predictive validity.
