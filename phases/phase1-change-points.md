@@ -1,6 +1,12 @@
+---
+title: "Phase 1: Change Points"
+parent: "Exploratory Analysis" 
+nav_order: 1
+---
+
 # Phase 1: Change Point Detection - Proof of Concept
 
-[← Back to Exploratory Analysis](../1-exploratory-analysis.md) | [Next: Phase 2 →](phase2-predictive-modeling.md)
+[← Back to Exploratory Analysis](../1-exploratory-analysis.md) | [Next: Phase 1.5 →](phase1.5-predictive-modeling.md)
 
 ---
 
