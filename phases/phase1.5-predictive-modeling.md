@@ -15,10 +15,9 @@ Change point analysis revealed correlational patterns between behavioral transit
 ### Supervised learning validation:
 - **Data:** 1,193 sessions with extracted temporal + behavioral features
 - **Methods:** Logistic regression, MultinomialNB (LR showed superior AUC)
-- **Target:** Learning outcome prediction (AllOrbsFilled success/unsuccessful)
+- **Target:** Succes prediction for two distinct game achievements (AllOrbsFilled, TreasureOpened)
 
 ## Key Findings
-*(images for each)*
 
 ### Strong Predictive Performance:
 - **Strong discrimination power**: Logistic regression achieved AUC 0.909 with 86% accuracy on held-out test data (239 sessions).
