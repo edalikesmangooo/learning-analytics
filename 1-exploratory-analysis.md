@@ -30,7 +30,7 @@ How can we systematically identify and characterize behavioral transitions in co
 ## 1.3. Progressive Methodology
 The exploratory analysis employed a **validate-then-elaborate** strategy to systematically moving from initial behavioral validation to sophisticated pattern discovery.
 
-### [Phase 1: Proof of Concept](../phase1-change-points.md)
+### [Phase 1: Proof of Concept](./phases/phase1-change-points.md)
 **Goal**: Establish that z-score detected change points capture behaviorally meaningful signals
 
 
@@ -44,7 +44,7 @@ The exploratory analysis employed a **validate-then-elaborate** strategy to syst
 *Addresses exploratory questions 1*
 
 
-### [Phase 1.5: Feature Validation](../phase1.5-predictive-modeling.md) 
+### [Phase 1.5: Feature Validation](./phases/phase1.5-predictive-modeling.md) 
 **Goal**: Test predictive validity of change point features
 **Methods**: Logistic regression, MultinomialNB on temporal/event predictors
 **Output**: Validated features for player state modeling
