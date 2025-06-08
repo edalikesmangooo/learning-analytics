@@ -1,5 +1,19 @@
 title: Spatial Learning Pathways
 description: Exploring how learners navigate multiplayer game spaces in museums
+
+remote_theme: just-the-docs/just-the-docs
+
+# Navigation structure
+nav_order: 1
+
+# Enable search
+search_enabled: true
+
+# Color scheme
+color_scheme: light
+
+
+
 show_downloads: false
 google_analytics: UA-XXXXXXXXX-X
 

@@ -3,6 +3,7 @@ title: Home
 layout: default
 nav_order: 1
 ---
+
 # Uncovering Learning Patterns in Collaborative Museum Games
 
 This site documents a **multi-phase research study** investigating individual learning patterns within collaborative, multiplayer game environments in museum settings. Using **computational behavioral analysis** (t-SNE spatial embedding, critical change points detection), **statistical validation methods** (mixed ANOVA, trajectory progression analysis), and **integration of the statistical analysis with machine learning techniques**, this work reveals the relationship between strategic convergence and learning progression during collaborative gameplay.
