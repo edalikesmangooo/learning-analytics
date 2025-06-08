@@ -1,7 +1,7 @@
 ---
-title: "Phase 1: Change Points"
-parent: "Exploratory Analysis" 
-nav_order: 1
+title: "EA1: Change Point Detection"
+layout: default
+nav_order: 3
 ---
 
 # Phase 1: Change Point Detection - Proof of Concept

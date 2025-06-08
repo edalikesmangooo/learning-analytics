@@ -1,3 +1,9 @@
+---
+title: "EA1.5: Predictive Modeling"
+layout: default
+nav_order: 4
+---
+
 # Predictive Validation: Can Behavioral Transitions Predict Learning Outcomes?
 
 ## Motivation
