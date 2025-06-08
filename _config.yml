@@ -1,16 +1,4 @@
 title: Uncover Learning Patterns in Collaborative Museum Games
 description: Exploring how learners navigate multiplayer game spaces in museums
-
-# Theme
-remote_theme: just-the-docs/just-the-docs
-
-# Theme settings
-search_enabled: true
-color_scheme: light
-show_downloads: false
-
-# Navigation
-nav_external_links:
-  - title: GitHub Repository
-    url: https://github.com/edalikesmangooo/learning-analtics
+theme: minima
 
