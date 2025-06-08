@@ -13,7 +13,7 @@ Change point analysis revealed correlational patterns between behavioral transit
 - **Behavioral aspects:** event types and frequencies (player actions)
 
 ### Supervised learning validation:
-- **Data:** 1,296 sessions with extracted temporal + behavioral features
+- **Data:** 1,193 sessions with extracted temporal + behavioral features
 - **Methods:** Logistic regression, MultinomialNB (LR showed superior AUC)
 - **Target:** Learning outcome prediction (AllOrbsFilled success/unsuccessful)
 
@@ -21,16 +21,38 @@ Change point analysis revealed correlational patterns between behavioral transit
 *(images for each)*
 
 ### Strong Predictive Performance:
-- **AUC:** 0.952 - Excellent discrimination between success/failure
-- **87% accuracy** with balanced precision (80-93%) and recall (82-93%)
+- **Strong discrimination power**: Logistic regression achieved AUC 0.909 with 86% accuracy on held-out test data (239 sessions).
+- **Balanced performance**: Consistent precision (85-87%) and recall (86%) across success/failure classes, demonstrating reliable prediction capability
+- **Behavioral-temporal interactions drive prediction**: Change point-derived features show genuine predictive validity beyond observational correlation
+<table style="width: 100%; border: none; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; padding: 0 10px; border: none; text-align: center;">
+      <img src="../assets/imagess/phase1.5-2-methods-AO-auc.png" alt="AUC Plot with 2 Methods" style="width: 100%; max-width: 400px;">
+      <p style="font-size: 0.9em; color: #666; margin-top: 10px;"> LR & MultinominalNB AUR on Predicting Game Goal 1 </p>
+    </td>
+    <td style="width: 40%; padding: 0 10px; border: none; text-align: center;">
+      <img src="../assets/imagess/phase1.5-new-LR-sum-table.png" alt="Summary Table" style="width: 100%; max-width: 400px;">
+      <p style="font-size: 0.9em; color: #666; margin-top: 10px;"> Summary Table</p>
+    </td>
+  </tr>
+</table>
 
 ### Feature Importance Rankings:
-- **Planting activities** emerge as strongest success predictors across all gameplay phases (coefficients 3.17-4.87)
+- **Planting activities** emerge as strongest success predictors across all gameplay phases (coefficients 1.55-2.76)
 - **Navigation** shows phase-dependent effects: positive early game, negative late game
 - **Programming activities** show negative associations, potentially indicating struggle patterns
-
-### Interaction Effects:
-The same behavioral actions show different predictive power depending on timing—planting late in sessions is more predictive than planting early, confirming that behavioral context matters for learning outcomes.
+<table style="width: 100%; border: none; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; padding: 0 10px; border: none; text-align: center;">
+      <img src="../assets/imagess/phase1.5-LR-AO-coefficients.png" alt="LR Coefficient Bar Chart on AO" style="width: 100%; max-width: 400px;">
+      <p style="font-size: 0.9em; color: #666; margin-top: 10px;">LR Feature Ranking on Game Goal 1</p>
+    </td>
+    <td style="width: 50%; padding: 0 10px; border: none; text-align: center;">
+      <img src="../assets/imagess/phase1.5-LR-TO-coefficients.png" alt="LR Coefficient Bar Chart on TO" style="width: 100%; max-width: 400px;">
+      <p style="font-size: 0.9em; color: #666; margin-top: 10px;">LR Feature Ranking on Game Goal 2</p>
+    </td>
+  </tr>
+</table>
 
 ## Next Steps
 
