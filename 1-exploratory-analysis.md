@@ -44,9 +44,9 @@ The exploratory analysis employed a **validate-then-elaborate** strategy to syst
 *Addresses exploratory questions 1*
 
 
-### [Phase 1.5: Feature Validation](./phases/phase1.5-predictive-modeling.md) 
+### [Phase 1.5: Predictive Validation](./phases/phase1.5-predictive-modeling.md) 
 **Goal**: Test predictive validity of change point features
-**Methods**: Logistic regression, MultinomialNB on temporal/event predictors
+**Methods**: Logistic regression, MultinomialNB on temporal & events predictors
 **Output**: Validated features for player state modeling
 
 ### Phase 2: Pattern Discovery (t-SNE)
@@ -69,6 +69,6 @@ The exploratory analysis employed a **validate-then-elaborate** strategy to syst
 
 ## Quick Navigation to Detailed Analyses
 - [Phase 1: Change Point Detection](phases/phase1-change-points.md)
-- [Phase 1.5: Predictive Modeling](phases/phase1.5-predictive-modeling.md) 
+- [Phase 1.5: Predictive Validation](phases/phase1.5-predictive-modeling.md) 
 - [Phase 2: Spatial Behavioral Mapping](phases/phase3-spatial-mapping.md)
 - [Phase 3: Focused Exploration Discovery](phases/phase4-focused-exploration.md)
