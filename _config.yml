@@ -1,3 +1,5 @@
-title: Test Site
-description: Testing
-theme: minima
+title: Uncover Learning Patterns in CS Museum Games
+description: Exploring how learners navigate multiplayer game spaces in museums
+remote_theme: just-the-docs/just-the-docs
+search_enabled: true
+color_scheme: light
