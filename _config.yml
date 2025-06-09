@@ -1,5 +1,15 @@
-title: Spatial Learning Pathways
+title: learning analytics not a book
 description: Exploring how learners navigate multiplayer game spaces in museums
 remote_theme: just-the-docs/just-the-docs
 search_enabled: true
 color_scheme: light
+
+
+# Remove the default theme footer
+footer_content: false
+
+# Remove the default theme footer
+footer_content: false
+
+# Custom footer with HTML
+footer_content: '🎮 want to check out <a href="https://huggingface.co/spaces/km3d4/rainbow-survey-data-viz" target="_blank">survey results?</a>'

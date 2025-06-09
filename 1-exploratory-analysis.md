@@ -1,5 +1,5 @@
 ---
-title: "Exploratory Analysis"
+title: "Exploratory Analysis (EA)"
 layout: default
 nav_order: 2
 ---

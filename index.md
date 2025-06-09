@@ -22,35 +22,19 @@ Understanding and supporting collaborative learning through multi-method analyti
 
 ---
 
-## Explore the Research Journey
-
-- [1. Exploratory Analysis](1-exploratory-analysis.md)  
-  *Initial deep dives into change points, player modeling, and spatial trajectories.*
-
-- [2. Hypothesis Generation](2-hypothesis-generation.md)  
-  *From patterns to testable theories: how exploratory insights evolved into structured questions.*
-
-- [3. Statistical Validation](3-statistical-validation.md)  
-  *Evidence from trajectory analysis and validation of behavioral trends.*
-
-- [4. Spatial Integration](4-spatial-integration.md)  
-  *Novel insights from integrating spatial and temporal data in gameplay.*
-
-- [5. Framework & Methodology](5-framework-methodology.md)  
-  *A replicable analysis pipeline for multi-modal, behavioral game data.*
-
-- [6. Museum Learning Dynamics](6-museum-learning-dynamics.md)  
-  *Design implications and insights for informal STEM learning environments.*
-
-- [7. Collaboration & Open Research](7-collaboration.md)  
-  *Datasets, ongoing opportunities, and calls for collaborative work.*
-
----
 ## Research Scope
 - **Data**: 1.5M+ game logs on learning analytics (1500+ sessions, 3000+ players), prelim focused 90 sessions, multi-method validation pipeline
 - **Methods**: Learner change points detection, spatial pathways, statistical progression analysis
 - **Implications**: Evidence-based design principles for informal learning environments
 - **Framework**: Systematic approach from behavioral understanding to learning support design
+
+---
+
+## Explore the Research Journey
+
+- [1. Exploratory Analysis](1-exploratory-analysis.md)  
+  *Initial deep dives into change points, player modeling, and spatial trajectories.*
+
 
 ---
 ## Emerging Insights
@@ -75,5 +59,3 @@ This work-in-progress explores a range of methods and analytical strategies that
 - **Visualization Suite**  
   Multiple chart types for spatial, temporal, and integrated analysis
 
-
-# Updated

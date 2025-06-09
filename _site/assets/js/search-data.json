@@ -1,0 +1,226 @@
+{"0": {
+    "doc": "Exploratory Analysis (EA)",
+    "title": "1. Exploratory Analysis: From Proof-of-Concept to Sophisticated Behavioral Understanding",
+    "content": " ",
+    "url": "/1-exploratory-analysis.html#1-exploratory-analysis-from-proof-of-concept-to-sophisticated-behavioral-understanding",
+    
+    "relUrl": "/1-exploratory-analysis.html#1-exploratory-analysis-from-proof-of-concept-to-sophisticated-behavioral-understanding"
+  },"1": {
+    "doc": "Exploratory Analysis (EA)",
+    "title": "1.1. Research Context &amp; Motivation",
+    "content": "Rainbow Agents is a two-player collaborative game designed to support learning of core computer science concepts such as loops, conditionals, and randomness. As an interactive exhibit, it was deployed at two U.S. science museums to explore informal, socially embedded learning through gameplay. While museums are studied as unique learning environments, little research has examined how collaborative digital games, particularly those focused on computer science, operate in such settings. This study addresses that gap through large-scale behavioral analysis. Our investigation was motivated by two fundamental questions: . Individual &amp; Collaborative Learning Dynamics: When and how do critical behavioral shifts occur during both individual learning and collaborative interaction within gameplay? . Computational Detection Methods: What analytical approaches can reliably detect and characterize distinct behavioral patterns that emerge during these sessions? . The deployment yielded over 1.5 million interaction logs from 1,300+ sessions involving more than 3,000 players. Note: Exploratory analyses used strategic subsampling to manage computational load; specific sample sizes are detailed in each phase. ",
+    "url": "/1-exploratory-analysis.html#11-research-context--motivation",
+    
+    "relUrl": "/1-exploratory-analysis.html#11-research-context--motivation"
+  },"2": {
+    "doc": "Exploratory Analysis (EA)",
+    "title": "1.2. Primary Exploratory Question",
+    "content": "How can we systematically identify and characterize behavioral transitions in collaborative CS learning gameplay using data-driven computational methods? . Specific Exploratory Questions . | Change Point Detection: Do z-score-based methods effectively capture meaningful behavioral transitions during collaborative CS learning? | Feature Validation: Which behavioral indicators extracted from change points show predictive value for learning outcomes, and how can these guide player state modeling? | Player State Discovery: What distinct behavioral states emerge when validated change point features are analyzed through dimensionality reduction? | State Interpretation: How do computationally-discovered player states map to interpretable learning behaviors and engagement patterns? | Pattern Validation: Do discovered behavioral states show consistent signatures when re-analyzed through change point detection? | . ",
+    "url": "/1-exploratory-analysis.html#12-primary-exploratory-question",
+    
+    "relUrl": "/1-exploratory-analysis.html#12-primary-exploratory-question"
+  },"3": {
+    "doc": "Exploratory Analysis (EA)",
+    "title": "1.3. Progressive Methodology",
+    "content": "The exploratory analysis employed a validate-then-elaborate strategy to systematically moving from initial behavioral validation to sophisticated pattern discovery. Phase 1: Proof of Concept . Goal: Establish that z-score detected change points capture behaviorally meaningful signals . Methods: . | Apply event-level z-score detection (threshold = 2.0) using event rarity statistics | Calculate behavioral shift density across temporal phases (0-4) | Test predictive validity: Do change point patterns predict learning success? | . Validation Logic: Before investing in complex pattern discovery, we first verify that our fundamental approach (z-score change detection) identifies changes that actually captures learning engagement. Addresses exploratory questions 1 . Phase 1.5: Predictive Validation . Goal: Test predictive validity of change point features Methods: Logistic regression, MultinomialNB on temporal &amp; events predictors Output: Validated features for player state modeling . Phase 2: Pattern Discovery (t-SNE) . Goal: Discover distinct behavioral pathways by analyzing player trajectories through dimensionality reduction . Phase 3: Pathway Interpretation (Grid-based Pathway Analysis) . Goal: Interpret t-SNE clusters as meaningful play states and learning progressions through grid-based pathway analysis . Phase 4: Method Validation . Goal: Do pathway-based behavioral patterns show consistent change point signatures when re-analyzed? . | ← Back to Research Overview | Next: Predictive Validation → | . ",
+    "url": "/1-exploratory-analysis.html#13-progressive-methodology",
+    
+    "relUrl": "/1-exploratory-analysis.html#13-progressive-methodology"
+  },"4": {
+    "doc": "Exploratory Analysis (EA)",
+    "title": "Quick Navigation to Detailed Analyses",
+    "content": ". | EA1: Change Point Detection | EA1.5: Predictive Validation | EA2: Spatial Behavioral Mapping | . ",
+    "url": "/1-exploratory-analysis.html#quick-navigation-to-detailed-analyses",
+    
+    "relUrl": "/1-exploratory-analysis.html#quick-navigation-to-detailed-analyses"
+  },"5": {
+    "doc": "Exploratory Analysis (EA)",
+    "title": "Exploratory Analysis (EA)",
+    "content": " ",
+    "url": "/1-exploratory-analysis.html",
+    
+    "relUrl": "/1-exploratory-analysis.html"
+  },"6": {
+    "doc": "EA1: Change Point Detection",
+    "title": "Phase 1: Change Point Detection - Proof of Concept",
+    "content": " ",
+    "url": "/EA1-change-points.html#phase-1-change-point-detection---proof-of-concept",
+    
+    "relUrl": "/EA1-change-points.html#phase-1-change-point-detection---proof-of-concept"
+  },"7": {
+    "doc": "EA1: Change Point Detection",
+    "title": "Overview",
+    "content": "Goal: Explore whether z-score-based change point detection can identify behaviorally meaningful transitions during collaborative CS learning gameplay . Question: . | Are there meaningful behavioral patterns in the gameplay data? | When are these transition patterns happening? | What characterizes these behavioral patterns? | . ",
+    "url": "/EA1-change-points.html#overview",
+    
+    "relUrl": "/EA1-change-points.html#overview"
+  },"8": {
+    "doc": "EA1: Change Point Detection",
+    "title": "Methodology",
+    "content": "Applied event-level change point detection using z-score-based analysis (threshold = 2.0) to identify when players exhibited behaviors significantly deviating from established patterns. The approach involved: . Change Point Detection: Z-score calculation for each event , flagging deviations ≥2.0 standard deviations as behavioral anomalies. Temporal Analysis: Sessions segmented into phases (0-4) to calculate change point density—the proportion of anomalous events within each temporal window—mapping when behavioral transitions occur throughout gameplay. ",
+    "url": "/EA1-change-points.html#methodology",
+    
+    "relUrl": "/EA1-change-points.html#methodology"
+  },"9": {
+    "doc": "EA1: Change Point Detection",
+    "title": "Key Findings",
+    "content": "Analysis of 80 sessions revealed systematic behavioral transitions with clear patterns: . | Universal behavioral dynamism: All 80 sessions contained detectable behavioral shifts, confirming that player behavior is not static during gameplay | Temporal clustering: Change points cluster in early exploration (Phase 0: 16.8%) and late strategy phases (Phase 3: 13.5%), with reduced transition activity during mid-session consolidation (Phase 2: 9.8%) Figure1: Temporal trend across gameplay phases | Learning Outcome differentiation:Sessions achieved all game goals exhibit higher change point density (118.8 vs. 53.6 events per session), suggesting behavioral flexibility may correlate with positive outcomes Figure 2: Group differences across different outcomes | Individual variability: Z-score magnitudes range widely (2.17-9.32), indicating diverse engagement strategies within the collaborative environment Figure 3a.: Change point detections of an individual: example 1 Figure 3b.: Change point detections of an individual: example 2 | Outcome-linked events: CardSwapped, MushroomOrbFilled, and CreatureDeselected emerge as the most frequently flagged events, potentially marking strategic transitions Figure 5: Most seen change points related events — ",
+    "url": "/EA1-change-points.html#key-findings",
+    
+    "relUrl": "/EA1-change-points.html#key-findings"
+  },"10": {
+    "doc": "EA1: Change Point Detection",
+    "title": "Discussion",
+    "content": "| . What it tells us: . | Systematic behavioral transitions: Meaningful behavioral shifts occur systematically during collaborative gameplay, with distinct temporal clustering patterns (46.7% in early phases, 15.2% in mid-session) that appear to differentiate successful from unsuccessful learning sessions | Outcome-related behavioral patterns: Higher density of behavioral shifts may be associated with positive outcomes (118.8 vs. 53.6 unusual events per session), suggesting behavioral activity correlates with learning success | Individual engagement diversity: Substantial individual variability (z-scores ranging 2.17-9.32) points toward diverse engagement strategies within the same learning environment | Predictive potential: These patterns suggest that player behavior contains structured signals that could potentially serve as early indicators of learning trajectory and engagement quality | . What it doesn’t tell us: . | Event granularity limitations: Change point detection operates on individual event types but cannot distinguish between player-initiated actions versus system-triggered responses (e.g., automatic unlocks vs. deliberate strategic choices), potentially diluting meaningful behavioral signals. | Sequential context loss: While temporal clustering reveals when behavioral shifts occur, the method cannot capture complex sequential patterns or dependencies between events that may indicate learning progressions or strategic development. | Multidimensional gameplay dynamics: The approach treats events as isolated occurrences rather than components of a complex, interconnected gameplay system where player actions, game state, and system responses create emergent behavioral patterns. | . ",
+    "url": "/EA1-change-points.html#discussion",
+    
+    "relUrl": "/EA1-change-points.html#discussion"
+  },"11": {
+    "doc": "EA1: Change Point Detection",
+    "title": "Next Steps:",
+    "content": ". | Change point detection established that meaningful behavioral transitions exist and identified temporal phases and event types as potential discriminating features. However, to understand the multidimensional nature of player behavior and predict learning outcomes, we need to move beyond event-level anomaly detection toward comprehensive player state modeling. | Before investing in complex pattern discovery, we first verify that our fundamental approach (z-score change detection) identifies changes that actually capture learning engagement. | This proof of concept validation enables Phase 1.5: Feature Validation and subsequent pattern discovery phases. | . | ← Back to Exploratory Analysis | Next: Phase 1.5 → | . ",
+    "url": "/EA1-change-points.html#next-steps",
+    
+    "relUrl": "/EA1-change-points.html#next-steps"
+  },"12": {
+    "doc": "EA1: Change Point Detection",
+    "title": "EA1: Change Point Detection",
+    "content": "| ← Back to Exploratory Analysis | Next: Phase 1.5 → | . ",
+    "url": "/EA1-change-points.html",
+    
+    "relUrl": "/EA1-change-points.html"
+  },"13": {
+    "doc": "EA1.5: Predictive Validation",
+    "title": "Predictive Validation: Can Behavioral Transitions Predict Learning Outcomes?",
+    "content": " ",
+    "url": "/EA1.5-predictive-modeling.html#predictive-validation-can-behavioral-transitions-predict-learning-outcomes",
+    
+    "relUrl": "/EA1.5-predictive-modeling.html#predictive-validation-can-behavioral-transitions-predict-learning-outcomes"
+  },"14": {
+    "doc": "EA1.5: Predictive Validation",
+    "title": "Motivation",
+    "content": "Change point analysis revealed correlational patterns between behavioral transitions and learning success. To understand the multidimensional nature of player behavior and predict learning outcomes, we move beyond event-level anomaly detection toward comprehensive player state modeling. The findings from change point analysis revealed two important dimensions that could inform predictive modeling: temporal patterns (when behavioral shifts occur during gameplay progression) and behavioral patterns (which types of player actions emerge as significant transitions). However, observational correlation does not guarantee predictive validity. Question: . Do these temporal and behavioral factors really have predictive power that can guide effective player state discovery? . ",
+    "url": "/EA1.5-predictive-modeling.html#motivation",
+    
+    "relUrl": "/EA1.5-predictive-modeling.html#motivation"
+  },"15": {
+    "doc": "EA1.5: Predictive Validation",
+    "title": "Methodology",
+    "content": "Feature extraction from change point insights: . (add diagram if time) . | Temporal aspects: time bin distribution, session duration | Behavioral aspects: event types and frequencies (player actions) | . Supervised learning validation: . | Data: 1,193 sessions with extracted temporal + behavioral features | Methods: Logistic regression, MultinomialNB (LR showed superior AUC) | Target: Succes prediction for two distinct game achievements (AllOrbsFilled, TreasureOpened) | . ",
+    "url": "/EA1.5-predictive-modeling.html#methodology",
+    
+    "relUrl": "/EA1.5-predictive-modeling.html#methodology"
+  },"16": {
+    "doc": "EA1.5: Predictive Validation",
+    "title": "Key Findings",
+    "content": "Strong Predictive Performance: . | Strong discrimination power: Logistic regression achieved AUC 0.909 with 86% accuracy on held-out test data (239 sessions). | Balanced performance: Consistent precision (85-87%) and recall (86%) across success/failure classes, demonstrating reliable prediction capability | Behavioral-temporal interactions drive prediction: Change point-derived features show genuine predictive validity beyond observational correlation | . | LR &amp; MultinominalNB AUR on Predicting Game Goal 1 . | Summary Table . | . Feature Importance Rankings: . | Planting activities emerge as strongest success predictors across all gameplay phases (coefficients 1.55-2.76) | Navigation shows phase-dependent effects: positive early game, negative late game | Programming activities show negative associations, potentially indicating struggle patterns | . | LR Feature Ranking on Game Goal 1 . | LR Feature Ranking on Game Goal 2 . | . ",
+    "url": "/EA1.5-predictive-modeling.html#key-findings",
+    
+    "relUrl": "/EA1.5-predictive-modeling.html#key-findings"
+  },"17": {
+    "doc": "EA1.5: Predictive Validation",
+    "title": "Next Steps",
+    "content": "Transition to Player State Discovery: . With validated predictive power established, these behavioral-temporal features provide a robust foundation for t-SNE analysis to discover distinct player states and learning trajectories during collaborative gameplay. Future Methodological Refinements: . Disentangle phase effects from behavioral effects through separate feature engineering (behavioral totals vs. temporal patterns vs. interaction terms) to understand whether timing or action type drives predictive power. ",
+    "url": "/EA1.5-predictive-modeling.html#next-steps",
+    
+    "relUrl": "/EA1.5-predictive-modeling.html#next-steps"
+  },"18": {
+    "doc": "EA1.5: Predictive Validation",
+    "title": "EA1.5: Predictive Validation",
+    "content": "| ← Back to Change Points Detection | Next: Play Tracing → | . ",
+    "url": "/EA1.5-predictive-modeling.html",
+    
+    "relUrl": "/EA1.5-predictive-modeling.html"
+  },"19": {
+    "doc": "EA2: Play Tracing",
+    "title": "Play Tracing Analysis",
+    "content": " ",
+    "url": "/EA2-play-tracing.html#play-tracing-analysis",
+    
+    "relUrl": "/EA2-play-tracing.html#play-tracing-analysis"
+  },"20": {
+    "doc": "EA2: Play Tracing",
+    "title": "Overview",
+    "content": ". | Goal: To reveal how player behavior evolves during collaborative gameplay by visualizing learning trajectories through a continuous behavioral state space. This approach enables systematic analysis of temporal learning patterns that traditional discrete metrics cannot capture. | . Play tracing unlocks: . | Strategy evolution tracking: Observe how collaborative strategies form, shift, or stabilize throughout gameplay sessions | Learning pathway discovery: Identify distinct behavioral progression patterns that lead to different learning outcomes | Comparative trajectory analysis: Compare diverse play patterns within a unified, temporally grounded behavioral space . | Questions: What distinct behavioral pathways emerge when player trajectories are visualized through dimensionality reduction? How do learning trajectories differ between successful and unsuccessful sessions? | . ",
+    "url": "/EA2-play-tracing.html#overview",
+    
+    "relUrl": "/EA2-play-tracing.html#overview"
+  },"21": {
+    "doc": "EA2: Play Tracing",
+    "title": "Methodology",
+    "content": "Player’s gameplay are segmented into behavioral states, a feature-based representations of player activity over discrete time windows, capturing elements such as action types, interaction patterns, and collaborative dynamics. These high-dimensional behavioral states are embedded into 2D space using t-SNE, preserving local similarities in behavioral patterns. The resulting trajectories allow researchers to observe how players transition between different behavioral modes and analyze the temporal shape and rhythm of collaborative learning processes. | States: Validated behavioral-temporal features from change points &amp; predictive modeling (add feature list table) | t-SNE process: Dimensionality reduction to map high-dimensional behavioral states to 2D space | Data: Random sampled 167 players | Trajectory construction: Sessions represented as sequential paths through t-SNE space using time-bin progression | . ",
+    "url": "/EA2-play-tracing.html#methodology",
+    
+    "relUrl": "/EA2-play-tracing.html#methodology"
+  },"22": {
+    "doc": "EA2: Play Tracing",
+    "title": "Key Findings (visual/exploratory analysis)",
+    "content": "Behavioral Space Emergence . | t-SNE reveals distinct behavioral regions in 2D space | Visual examples showing different areas of behavioral space | (Focus: What does the overall landscape look like?) | . Trajectory Path Comparison . | Full achievement vs limited progress sessions follow visibly different pathways | Visual comparison of trajectory shapes and patterns | (Focus: Do paths look different between groups?) | . Success Distribution Patterns . | Learning outcomes show spatial clustering in certain t-SNE regions | Color-coded visualization mapping success groups to behavioral space | (Focus: Are there “success zones” and “struggle zones”?) | . ",
+    "url": "/EA2-play-tracing.html#key-findings-visualexploratory-analysis",
+    
+    "relUrl": "/EA2-play-tracing.html#key-findings-visualexploratory-analysis"
+  },"23": {
+    "doc": "EA2: Play Tracing",
+    "title": "Discussion",
+    "content": ". | What it tells us: Behavioral trajectories exist, they differ by outcome, and occupy distinct spatial regions | What it doesn’t tell us: t-SNE gives us visual patterns but they’re hard to interpret - | “There are different behavioral regions” → But what do they mean? | “Full achievement paths look different” → But how specifically? | “Players move through space” → But what are they actually doing? | . ",
+    "url": "/EA2-play-tracing.html#discussion",
+    
+    "relUrl": "/EA2-play-tracing.html#discussion"
+  },"24": {
+    "doc": "EA2: Play Tracing",
+    "title": "Next Steps",
+    "content": "To answer these questions, we turn to grid-based pathway analysis for systematic interpretation of behavioral regions and transition patterns. ",
+    "url": "/EA2-play-tracing.html#next-steps",
+    
+    "relUrl": "/EA2-play-tracing.html#next-steps"
+  },"25": {
+    "doc": "EA2: Play Tracing",
+    "title": "EA2: Play Tracing",
+    "content": "| ← Back to Predictive Validation | Next: Decoding t-SNE → | . ",
+    "url": "/EA2-play-tracing.html",
+    
+    "relUrl": "/EA2-play-tracing.html"
+  },"26": {
+    "doc": "Home",
+    "title": "Uncovering Learning Patterns in Collaborative Museum Games",
+    "content": "This site documents a multi-phase research study investigating individual learning patterns within collaborative, multiplayer game environments in museum settings. Using computational behavioral analysis (t-SNE spatial embedding, critical change points detection), statistical validation methods (mixed ANOVA, trajectory progression analysis), and integration of the statistical analysis with machine learning techniques, this work reveals the relationship between strategic convergence and learning progression during collaborative gameplay. ",
+    "url": "/#uncovering-learning-patterns-in-collaborative-museum-games",
+    
+    "relUrl": "/#uncovering-learning-patterns-in-collaborative-museum-games"
+  },"27": {
+    "doc": "Home",
+    "title": "Research Focus",
+    "content": "Understanding and supporting collaborative learning through multi-method analytics in authentic educational environments. Core Questions . | When and how do critical behavioral shifts occur during individual learning within collaborative gameplay sessions? | What computational methods can reliably detect and characterize these learning transitions? | What distinct individual behavioral patterns emerge during collaborative learning sessions? | How can integrated spatial-temporal analytics inform evidence-based design for collaborative learning environments? | . ",
+    "url": "/#research-focus",
+    
+    "relUrl": "/#research-focus"
+  },"28": {
+    "doc": "Home",
+    "title": "Research Scope",
+    "content": ". | Data: 1.5M+ game logs on learning analytics (1500+ sessions, 3000+ players), prelim focused 90 sessions, multi-method validation pipeline | Methods: Learner change points detection, spatial pathways, statistical progression analysis | Implications: Evidence-based design principles for informal learning environments | Framework: Systematic approach from behavioral understanding to learning support design | . ",
+    "url": "/#research-scope",
+    
+    "relUrl": "/#research-scope"
+  },"29": {
+    "doc": "Home",
+    "title": "Explore the Research Journey",
+    "content": ". | 1. Exploratory Analysis Initial deep dives into change points, player modeling, and spatial trajectories. | . ",
+    "url": "/#explore-the-research-journey",
+    
+    "relUrl": "/#explore-the-research-journey"
+  },"30": {
+    "doc": "Home",
+    "title": "Emerging Insights",
+    "content": "This work-in-progress explores a range of methods and analytical strategies that may be useful for researchers studying informal learning, spatial interaction, and game-based environments. While still under development, these approaches show potential for informing future research and design. Analytical Approaches Explored . | Change Point Detection in Play Identifies shifts in learner engagement or strategy using z-score analysis across behavior windows. | Spatial Behavior Modeling Reconstructs learner pathways to explore navigation styles and exploration patterns. | Predictive Modeling of Session Outcomes Uses logistic and multinomial models to examine how early behavioral indicators relate to success metrics. | Trajectory-Informed Hypothesis Generation Links behavior patterns to evolving research questions, demonstrating a possible model for exploratory-to-confirmatory transitions. | . Methodological Contributions . | Complete Analysis Pipeline Demonstrated end-to-end process from raw logs to actionable insights | Replicable Methodology Framework adaptable to other collaborative learning contexts | Visualization Suite Multiple chart types for spatial, temporal, and integrated analysis | . ",
+    "url": "/#emerging-insights",
+    
+    "relUrl": "/#emerging-insights"
+  },"31": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  }
+}
