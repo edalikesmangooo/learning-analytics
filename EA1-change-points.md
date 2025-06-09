@@ -6,7 +6,7 @@ nav_order: 3
 
 [← Back to Exploratory Analysis](1-exploratory-analysis.md) | [Next: Phase 1.5 →](EA1.5-predictive-modeling.md)
 
-# Phase 1: Change Point Detection - Proof of Concept
+# 1. Change Point Detection - Proof of Concept
 
 ## Overview
 

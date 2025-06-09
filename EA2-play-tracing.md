@@ -6,7 +6,7 @@ nav_order: 5
 
 [← Back to Predictive Validation](EA1.5-predictive-modeling.md) | [Next: Decoding t-SNE →](EA2.5-pathway-analysis.md)
 
-# Play Tracing Analysis
+# 2. Play Tracing Analysis
 
 ## Overview
 

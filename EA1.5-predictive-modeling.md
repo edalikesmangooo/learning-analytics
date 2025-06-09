@@ -6,7 +6,7 @@ nav_order: 4
 
 [← Back to Change Points Detection](EA1-change-points.md) | [Next: Play Tracing →](EA2-play-tracing.md)
 
-# Predictive Validation: Can Behavioral Transitions Predict Learning Outcomes?
+# 1.5 Predictive Validation: Can Behavioral Transitions Predict Learning Outcomes?
 
 ## Motivation
 Change point analysis revealed correlational patterns between behavioral transitions and learning success. To understand the multidimensional nature of player behavior and predict learning outcomes, we move beyond event-level anomaly detection toward comprehensive player state modeling. 

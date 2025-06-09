@@ -4,9 +4,9 @@ layout: default
 nav_order: 2
 ---
 
-# 1. Exploratory Analysis: From Proof-of-Concept to Sophisticated Behavioral Understanding
+# Exploratory Analysis: From Proof-of-Concept to Sophisticated Behavioral Understanding
 
-## 1.1. Research Context & Motivation
+## 1. Research Context & Motivation
 Rainbow Agents is a two-player collaborative game designed to support learning of core computer science concepts such as loops, conditionals, and randomness. As an interactive exhibit, it was deployed at two U.S. science museums to explore informal, socially embedded learning through gameplay.
 
 While museums are studied as unique learning environments, little research has examined how collaborative digital games, particularly those focused on computer science, operate in such settings. This study addresses that gap through large-scale behavioral analysis.
@@ -22,7 +22,7 @@ The deployment yielded over 1.5 million interaction logs from 1,300+ sessions in
 _Note: Exploratory analyses used strategic subsampling to manage computational load; specific sample sizes are detailed in each phase._
 
 ---
-## 1.2. Primary Exploratory Question
+## 2. Primary Exploratory Question
 How can we systematically identify and characterize behavioral transitions in collaborative CS learning gameplay using data-driven computational methods?
 
 ### Specific Exploratory Questions
@@ -33,7 +33,7 @@ How can we systematically identify and characterize behavioral transitions in co
 5. **Pattern Validation**: Do discovered behavioral states show consistent signatures when re-analyzed through change point detection?
 
 ---
-## 1.3. Progressive Methodology
+## 3. Progressive Methodology
 The exploratory analysis employed a **validate-then-elaborate** strategy to systematically moving from initial behavioral validation to sophisticated pattern discovery.
 
 ### [Phase 1: Proof of Concept](EA1-change-points.md)
@@ -58,10 +58,10 @@ The exploratory analysis employed a **validate-then-elaborate** strategy to syst
 ### Phase 2: Pattern Discovery (t-SNE)
 **Goal**:  Discover distinct behavioral pathways by analyzing player trajectories through dimensionality reduction
 
-### Phase 3: Pathway Interpretation (Grid-based Pathway Analysis)
+### Phase 2.5: Pathway Interpretation (Grid-based Pathway Analysis)
 **Goal**: Interpret t-SNE clusters as meaningful play states and learning progressions through grid-based pathway analysis
 
-### Phase 4: Method Validation
+### Phase 3: Method Validation
 **Goal**: Do pathway-based behavioral patterns show consistent change point signatures when re-analyzed?
 
 
