@@ -17,7 +17,7 @@ Our investigation was motivated by two fundamental questions:
 
 **Computational Detection Methods**: What analytical approaches can reliably detect and characterize distinct behavioral patterns that emerge during these sessions?
 
-The deployment yielded over 1.5 million interaction logs from 1,300+ sessions involving more than 3,000 players.
+The deployment yielded over 1.5 million interaction logs from 1,200+ sessions involving more than 3,000 players.
 
 _Note: Exploratory analyses used strategic subsampling to manage computational load; specific sample sizes are detailed in each phase._
 
